@@ -1,0 +1,22 @@
+.bg-secondary{
+    background-color: #2F3437 !important;
+}
+
+.primary-action{
+    color: #EB4511 !important;
+}
+
+.heading-text{
+    color: #F6FBFC;
+}
+
+.my-0.heading-text:hover{
+    color: #EB4511;
+}
+
+.dropdown-item{
+    color: #F6FBFC;
+}
+.dropdown-item:hover{
+    color: #EB4511 !important;
+}
