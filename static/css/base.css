@@ -1,22 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+    font-family: 'Mulish', sans-serif;
+    background-color: #1C1F21 !important;
+    color: #BCD3D8;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Urbanist', sans-serif;
+}
+
+.btn-primary {
+    background-color: #EB4511;
+    color: #F6FBFC;
+    border: 0px;
+}
+
+.btn-secondary {
+    background-color: F6FBFC;
+    color: #1C1F21;
+    border: 2px solid #EB4511;
+}
+
 .bg-secondary{
     background-color: #2F3437 !important;
 }
 
-.primary-action{
+.primary-action, .btn-tertiary, .fas{
     color: #EB4511 !important;
+}
+
+.nav-text,.dropdown-item{
+    color: #BCD3D8;
 }
 
 .heading-text{
     color: #F6FBFC;
 }
 
-.my-0.heading-text:hover{
+.my-0.heading-text:hover, .dropdown-item:hover, .nav-text:hover{
     color: #EB4511;
 }
 
-.dropdown-item{
-    color: #F6FBFC;
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
-.dropdown-item:hover{
-    color: #EB4511 !important;
-}
+
+
+/* Index.html */
+.hero-img {
+    background: url('/media/climber-hero-img.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .hero-img h5 {
+    text-shadow:2px 2px #333;
+  }
+
+  /* ----- Media Queries -----*/
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 64px;
+      }
+  }
