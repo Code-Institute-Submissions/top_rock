@@ -19,11 +19,11 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0 bg-secondary" aria-labelledby="equipment-link">
-                <a href="" class="dropdown-item">Harnesses</a>
-                <a href="" class="dropdown-item">Shoes</a>
-                <a href="" class="dropdown-item">Chalk Bags</a>
-                <a href="" class="dropdown-item">Chalk</a>
-                <a href="" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=harness" class="dropdown-item">Harnesses</a>
+                <a href="{% url 'products' %}?category=shoes" class="dropdown-item">Shoes</a>
+                <a href="{% url 'products' %}?category=chalk_bags" class="dropdown-item">Chalk Bags</a>
+                <a href="{% url 'products' %}?category=chalk" class="dropdown-item">Chalk</a>
+                <a href="{% url 'products' %}?category=harness,shoes,chalk_bags,chalk" class="dropdown-item">All Equipment</a>
 
             </div>
         </li>
@@ -34,11 +34,11 @@
                 Small Gear
             </a>
             <div class="dropdown-menu border-0 bg-secondary" aria-labelledby="gear-link">
-                <a href="" class="dropdown-item">Belay devices</a>
-                <a href="" class="dropdown-item">Carabiners</a>
-                <a href="" class="dropdown-item">Bags</a>
-                <a href="" class="dropdown-item">accessories</a>
-                <a href="" class="dropdown-item">All Gear</a>
+                <a href="{% url 'products' %}?category=belay_devices" class="dropdown-item">Belay devices</a>
+                <a href="{% url 'products' %}?category=carabiners" class="dropdown-item">Carabiners</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">accessories</a>
+                <a href="{% url 'products' %}?category=belay_devices,carabiners,bags,accessories" class="dropdown-item">All Gear</a>
             </div>
         </li>
 
@@ -48,10 +48,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0 bg-secondary" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
