@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5{
 
 .btn-secondary {
     background-color: F6FBFC;
-    color: #1C1F21;
+    color: #1C1F21 important;
     border: 2px solid #EB4511;
 }
 
