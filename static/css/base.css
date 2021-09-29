@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5{
     border: 2px solid #EB4511;
 }
 
-.bg-secondary{
+.bg-secondary, .card{
     background-color: #2F3437 !important;
 }
 
