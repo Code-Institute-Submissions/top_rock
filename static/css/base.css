@@ -82,17 +82,28 @@ h1, h2, h3, h4, h5{
     }
   }
   
-  /* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up */
   @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
   
-      .header-container {
+    .header-container {
         padding-top: 164px;
-      }
-  }
+    }
+}
+
+/* pad the top when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
